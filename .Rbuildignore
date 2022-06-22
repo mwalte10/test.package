@@ -1,3 +1,4 @@
 ^test\.package\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^\.github$
