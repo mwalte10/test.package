@@ -8,7 +8,7 @@
 ##'
 ##' @examples
 ##' a = 1; b = 2; test_function(1,2)
-test_function <- function(a, b){
-  c <- a+b
+test_function <- function(a, b) {
+  c <- a + b
   return(c)
 }
