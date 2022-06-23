@@ -15,3 +15,7 @@ test_function <- function(a, b) {
 test_function2 <- function(a, b) {
   adder(a, b)
 }
+
+test_is_maggie_bday <- function(name){
+  is_maggie_bday(name)
+}

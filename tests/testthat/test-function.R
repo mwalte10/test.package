@@ -6,3 +6,8 @@ test_that("addition works", {
 test_that("rcpp adder works", {
   expect_equal(test_function2(1, 3), 4)
 })
+
+test_that("is_maggie_bday works", {
+  expect_equal(is_maggie_bday(9251996), true)
+  expect_equal(is_maggie(10251996), false)
+})

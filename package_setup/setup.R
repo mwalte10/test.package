@@ -16,6 +16,8 @@ usethis::use_rcpp()
 devtools::document()
 ##when you make a change to some code or after you do a change to the document
 devtools::load_all()
+test_is_maggie_bday(11251996)
+test_is_maggie_bday(9251996)
 
 
 #add this to the PACKAGENAME-package.R
