@@ -25,3 +25,13 @@ bool is_maggies_name (std::string input){
     return(false);
   }
 }
+
+// [[Rcpp::export]]
+int to_ten (int num){
+  while (num < 10){
+   num = num + 1;
+  }
+    return(num);
+}
+
+

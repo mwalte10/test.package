@@ -13,3 +13,7 @@ is_maggies_name <- function(input) {
     .Call(`_test_package_is_maggies_name`, input)
 }
 
+to_ten <- function(num) {
+    .Call(`_test_package_to_ten`, num)
+}
+

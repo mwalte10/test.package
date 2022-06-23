@@ -44,11 +44,23 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// to_ten
+int to_ten(int num);
+RcppExport SEXP _test_package_to_ten(SEXP numSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< int >::type num(numSEXP);
+    rcpp_result_gen = Rcpp::wrap(to_ten(num));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_test_package_adder", (DL_FUNC) &_test_package_adder, 2},
     {"_test_package_is_maggie_bday", (DL_FUNC) &_test_package_is_maggie_bday, 1},
     {"_test_package_is_maggies_name", (DL_FUNC) &_test_package_is_maggies_name, 1},
+    {"_test_package_to_ten", (DL_FUNC) &_test_package_to_ten, 1},
     {NULL, NULL, 0}
 };
 
