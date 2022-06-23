@@ -19,9 +19,9 @@ bool is_maggie_bday (int bday) {
 // [[Rcpp::export]]
 bool is_maggies_name (std::string input){
   std::string str = "Maggie";
-  if(input == str){
+  if (input == str) {
     return(true);
-  }else{
+  } else {
     return(false);
   }
 }
