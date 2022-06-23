@@ -8,13 +8,13 @@ test_that("rcpp adder works", {
 })
 
 test_that("is_maggie_bday works", {
-  expect_equal(is_maggie_bday(9251996), true)
-  expect_equal(is_maggie(10251996), false)
+  expect_equal(is_maggie_bday(9251996), TRUE)
+  expect_equal(is_maggie_bday(10251996), FALSE)
 })
 
 test_that("is_maggie works", {
-  expect_equal(is_maggies_name("Maggie"), true)
-  expect_equal(is_maggies_name("Rob"), false)
+  expect_equal(is_maggies_name("Maggie"), TRUE)
+  expect_equal(is_maggies_name("Rob"), FALSE)
 })
 
 test_that("to ten works", {
