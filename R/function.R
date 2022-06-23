@@ -23,3 +23,7 @@ test_is_maggie_bday <- function(date){
 test_is_maggie <- function(name){
   is_maggie(name)
 }
+
+test_to_ten <- function(num){
+  to_ten(num)
+}

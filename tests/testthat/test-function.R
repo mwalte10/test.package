@@ -16,3 +16,7 @@ test_that("is_maggie works", {
   expect_equal(is_maggies_name("Maggie"), TRUE)
   expect_equal(is_maggies_name("Rob"), FALSE)
 })
+
+test_that("to ten works", {
+  expect_equal(to_ten(1), 10)
+})
