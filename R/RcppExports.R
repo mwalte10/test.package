@@ -9,3 +9,7 @@ is_maggie_bday <- function(bday) {
     .Call(`_test_package_is_maggie_bday`, bday)
 }
 
+is_maggies_name <- function(input) {
+    .Call(`_test_package_is_maggies_name`, input)
+}
+

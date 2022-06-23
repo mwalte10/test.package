@@ -11,3 +11,8 @@ test_that("is_maggie_bday works", {
   expect_equal(is_maggie_bday(9251996), true)
   expect_equal(is_maggie(10251996), false)
 })
+
+test_that("is_maggie works", {
+  expect_equal(is_maggie("Maggie"), true)
+  expect_equal(is_maggie("Rob"), false)
+})
