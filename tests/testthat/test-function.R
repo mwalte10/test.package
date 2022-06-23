@@ -13,8 +13,8 @@ test_that("is_maggie_bday works", {
 })
 
 test_that("is_maggie works", {
-  expect_equal(is_maggie("Maggie"), true)
-  expect_equal(is_maggie("Rob"), false)
+  expect_equal(is_maggies_name("Maggie"), true)
+  expect_equal(is_maggies_name("Rob"), false)
 })
 
 test_that("to ten works", {
