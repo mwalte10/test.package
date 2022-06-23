@@ -22,9 +22,33 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// is_maggie_bday
+bool is_maggie_bday(int bday);
+RcppExport SEXP _test_package_is_maggie_bday(SEXP bdaySEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< int >::type bday(bdaySEXP);
+    rcpp_result_gen = Rcpp::wrap(is_maggie_bday(bday));
+    return rcpp_result_gen;
+END_RCPP
+}
+// is_maggies_name
+bool is_maggies_name(std::string input);
+RcppExport SEXP _test_package_is_maggies_name(SEXP inputSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< std::string >::type input(inputSEXP);
+    rcpp_result_gen = Rcpp::wrap(is_maggies_name(input));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_test_package_adder", (DL_FUNC) &_test_package_adder, 2},
+    {"_test_package_is_maggie_bday", (DL_FUNC) &_test_package_is_maggie_bday, 1},
+    {"_test_package_is_maggies_name", (DL_FUNC) &_test_package_is_maggies_name, 1},
     {NULL, NULL, 0}
 };
 

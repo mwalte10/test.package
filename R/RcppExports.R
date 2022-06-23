@@ -2,6 +2,14 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 adder <- function(a, b) {
-    .Call('_test_package_adder', PACKAGE = 'test.package', a, b)
+    .Call(`_test_package_adder`, a, b)
+}
+
+is_maggie_bday <- function(bday) {
+    .Call(`_test_package_is_maggie_bday`, bday)
+}
+
+is_maggies_name <- function(input) {
+    .Call(`_test_package_is_maggies_name`, input)
 }
 
