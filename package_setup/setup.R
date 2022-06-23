@@ -18,7 +18,7 @@ devtools::document()
 devtools::load_all()
 test_is_maggie_bday(11251996)
 test_is_maggie_bday(9251996)
-
+print_yes(15, 20)
 
 #add this to the PACKAGENAME-package.R
 #' @useDynLib test.package, .registration = TRUE

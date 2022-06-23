@@ -17,3 +17,7 @@ to_ten <- function(num) {
     .Call(`_test_package_to_ten`, num)
 }
 
+print_yes <- function(start, end) {
+    .Call(`_test_package_print_yes`, start, end)
+}
+

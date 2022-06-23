@@ -34,4 +34,14 @@ int to_ten (int num){
     return(num);
 }
 
+// [[Rcpp::export]]
+int print_yes (int start, int end){
+  int out = 0;
+  for(start; start < end; start++){
+    out = start + out;
+  }
+  return(out);
+}
+
+
 

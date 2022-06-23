@@ -55,12 +55,25 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// print_yes
+int print_yes(int start, int end);
+RcppExport SEXP _test_package_print_yes(SEXP startSEXP, SEXP endSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< int >::type start(startSEXP);
+    Rcpp::traits::input_parameter< int >::type end(endSEXP);
+    rcpp_result_gen = Rcpp::wrap(print_yes(start, end));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_test_package_adder", (DL_FUNC) &_test_package_adder, 2},
     {"_test_package_is_maggie_bday", (DL_FUNC) &_test_package_is_maggie_bday, 1},
     {"_test_package_is_maggies_name", (DL_FUNC) &_test_package_is_maggies_name, 1},
     {"_test_package_to_ten", (DL_FUNC) &_test_package_to_ten, 1},
+    {"_test_package_print_yes", (DL_FUNC) &_test_package_print_yes, 2},
     {NULL, NULL, 0}
 };
 
